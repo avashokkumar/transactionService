@@ -38,6 +38,6 @@ jobs:
         key: ${{ secrets.EC2_KEY }}
         script: |
           docker pull ${{ secrets.DOCKER_IMAGE }}
-          docker stop spring-boot-app || true
-          docker rm spring-boot-app || true
-          docker run -d -p 80:8080 --name spring-boot-app ${{ secrets.DOCKER_IMAGE }}
+          docker stop transaction-service || true
+          docker rm transaction-service || true
+          docker run -d -p 80:8200 --name transaction-service ${{ secrets.DOCKER_IMAGE }}
