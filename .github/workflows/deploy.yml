@@ -40,4 +40,4 @@ jobs:
           docker pull ${{ secrets.DOCKER_IMAGE }}
           docker stop transaction-service || true
           docker rm transaction-service || true
-          docker run -d -p 80:8200 --name transaction-service ${{ secrets.DOCKER_IMAGE }}
+          docker run -d -p 8200:8200 --name transaction-service ${{ secrets.DOCKER_IMAGE }}
