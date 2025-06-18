@@ -1,0 +1,12 @@
+{"properties": [
+  {
+    "name": "fraud_detection_api",
+    "type": "java.lang.String",
+    "description": "A description for 'fraud_detection_api'"
+  },
+  {
+    "name": "fraud_detection_path",
+    "type": "java.lang.String",
+    "description": "A description for 'fraud_detection_path'"
+  }
+]}
